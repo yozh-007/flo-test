@@ -1,0 +1,56 @@
+/*Typography
+**************************************************************************************************/
+
+html {
+  font-size: $font-size-root;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text;
+  font-weight: $normal;
+  @include font-smoothing(on);
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+}
+
+//
+// Text tools
+//
+
+b,
+strong {
+  font-family: $font;
+  font-weight: $bold;
+}
+
+em {
+  font-weight: inherit;
+  font-style: italic;
+}
+
+p {
+  margin-bottom: 0;
+  & + p {
+    margin-top: 2rem;
+  }
+}
+
+/* Titles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $font;
+  font-weight: $bold;
+  text-transform: none;
+  color: $text;
+}

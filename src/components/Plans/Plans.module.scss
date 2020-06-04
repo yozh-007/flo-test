@@ -1,0 +1,17 @@
+@import '../../assets/scss/helpers';
+
+.fp-plans {
+  margin-left: -0.3rem;
+  margin-right: -0.3rem;
+  padding-top: 3rem;
+  padding-bottom: 2.4rem;
+  &__list {
+    @include list-reset();
+    margin: 0 auto;
+    width: 100%;
+    max-width: $iphoneX-width + 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+}

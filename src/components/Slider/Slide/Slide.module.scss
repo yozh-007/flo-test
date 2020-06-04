@@ -1,0 +1,39 @@
+@import '../../../assets/scss/helpers';
+
+.fp-slide {
+  padding-bottom: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  &__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $iphoneX-width;
+  }
+  &__img-wrap {
+    position: relative;
+    padding-bottom: 88.24%;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 23.8rem;
+    height: auto;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  &__title {
+    margin-bottom: 1rem;
+    font-size: $font-size;
+    line-height: 1.22;
+  }
+  &__info {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: $normal;
+  }
+}

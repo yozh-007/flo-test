@@ -1,0 +1,91 @@
+//
+// Colors common
+// --------------------------------------------------
+$white: #fff;
+$rose: #ee6786;
+$black: #000;
+$grey: #cccccc;
+$light-grey: #f2f2f2;
+$dark-grey: #808080;
+
+
+// Text
+$text: $black;
+$text-grey: $dark-grey;
+
+
+// Backgroud
+$bg: $white;
+$bg-rose: $rose;
+
+
+// Borders
+$bd-rose: $rose;
+
+
+//
+// Colors functional
+// --------------------------------------------------
+
+// Links:
+$link-hover: $rose;
+
+//
+// Typography
+// --------------------------------------------------
+$font-base: "Roboto", Helvetica, Arial, sans-serif;
+$font: $font-base;
+$font-serif: Georgia, 'Times New Roman', Times, serif;
+
+
+// Font sizes
+// -------------------------
+$font-size-root: 10px;
+$font-size: 1.8rem;
+
+// Line heights
+// -------------------------
+
+$line-height: 1.1112;
+
+// Font weights
+// -------------------------
+
+$lighter: 300;
+$normal: 400;
+$bold: 700;
+$bolder: 900;
+
+// Paths
+// -------------------------
+
+//$font-img-path: '../images';
+
+
+// Dimensions
+// -------------------------
+
+
+$iphoneX-width: 37.5rem;
+$iphoneX-height: 81.2rem;
+
+$iphone5s-width: 32rem;
+$iphone5s-height: 56.8rem;
+
+
+// Media filters
+$M_X5S: 'screen and (max-width: 319px)';
+$M_X4S: 'screen and (max-width: 374px)';
+$M_X3S: 'screen and (max-width: 479px)';
+$M_X2S: 'screen and (max-width: 639px)';
+$M_X1-2S: 'screen and (max-width: 719px)';
+$M_XS: 'screen and (max-width: 767px)'; // phones
+$M_XSM: 'screen and (max-width: 869px)';
+$M_SM: 'screen and (max-width: 991px)'; // tablets
+$M_SM_UP: 'screen and (min-width: 992px)'; // from tablets to desktop
+$M_SMX: 'screen and (max-width: 1023px)';
+$M_SM2X: 'screen and (max-width: 1099px)';
+$M_SM3X: 'screen and (max-width: 1149px)';
+$M_MD: 'screen and (max-width: 1199px)'; // medium desktop
+$M_LG: 'screen and (min-width: 1200px)'; // large desktop
+$M_XLG: 'screen and (max-width: 1399px)'; // extra-large desktop

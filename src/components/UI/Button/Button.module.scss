@@ -1,0 +1,29 @@
+@import '../../../assets/scss/helpers';
+
+.fp-btn {
+  &-wrap {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  padding: 1.5rem 2rem 1.2rem;
+  width: 100%;
+  max-width: 34.4rem;
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.12;
+  color: $white;
+  font-weight: $bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  outline: none;
+  background: rgba(255,90,126,1);
+  background: linear-gradient(-45deg, rgba(253,131,161,1) 0%, rgba(255,151,186,1) 15%, rgba(231,70,99,1) 50%, rgba(255,90,126,1) 100%);
+
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  border-radius: 2.5rem;
+}
