@@ -5,6 +5,7 @@
     margin: 0 5px;
     outline: none;
     background-color: $grey;
+    cursor: pointer;
     @include transition(background 0.15s ease-out);
     &.swiper-pagination-bullet-active {
       background-color: $black;

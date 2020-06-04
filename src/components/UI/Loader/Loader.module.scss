@@ -5,6 +5,7 @@
   display: block;
   width: 8rem;
   height: 8rem;
+  @include content-box-all;
 
   &-wrap {
     height: 100%;
@@ -15,61 +16,38 @@
   }
 
   span {
-    position: absolute;
-    top: 3.3rem;
-    width: 1.3rem;
-    height: 1.3rem;
+    box-sizing: border-box;
     display: block;
+    position: absolute;
+    width: 6.4rem;
+    height: 6.4rem;
+    margin: .8rem;
+    border: .8rem solid $rose;
     border-radius: 50%;
-    background: $rose;
-    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    animation: fp-loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: $rose transparent transparent transparent;
   }
 
   span:nth-child(1) {
-    left: .8rem;
-    animation: fp-loader1 0.6s infinite;
+    animation-delay: -0.45s;
   }
 
   span:nth-child(2) {
-    left: .8rem;
-    animation: fp-loader2 0.6s infinite;
+    animation-delay: -0.3s;
   }
 
   span:nth-child(3) {
-    left: 3.2rem;
-    animation: fp-loader2 0.6s infinite;
-  }
-
-  span:nth-child(4) {
-    left: 5.6rem;
-    animation: fp-loader3 0.6s infinite;
+    animation-delay: -0.15s;
   }
 }
 
-@keyframes fp-loader1 {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
-@keyframes fp-loader3 {
+@keyframes fp-loader {
   0% {
-    transform: scale(1);
+    transform: rotate(0deg);
   }
   100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes fp-loader2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(2.4rem, 0);
+    transform: rotate(360deg);
   }
 }
 

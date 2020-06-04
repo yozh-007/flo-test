@@ -30,6 +30,7 @@
     -moz-border-radius: 1rem;
     border-radius: 1rem;
     @include transition(opacity 0.15s ease-in);
+    cursor: pointer;
   .fp-plan--popular.fp-plan--active & {
       opacity: 1;
       visibility: visible;
@@ -48,6 +49,7 @@
     -webkit-border-radius: 0.8rem;
     -moz-border-radius: 0.8rem;
     border-radius: 0.8rem;
+    cursor: pointer;
     .fp-plan--active & {
       background-color: #fff;
       box-shadow: 0 0 0 0.2rem $rose;
