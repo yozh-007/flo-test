@@ -14,6 +14,11 @@ const Slider = (props) => {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
+      updateOnWindowResize: true,
+      speed: 1000,
+    },
+    autoplay: {
+      delay: 3000,
     },
     spaceBetween: 30,
   };
