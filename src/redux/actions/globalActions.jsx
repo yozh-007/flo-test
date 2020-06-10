@@ -1,4 +1,4 @@
-import axios from '../../helpers/axios/axios-quiz';
+import axios from '../../helpers/axios/axios-base';
 import { SET_GLOBAL_STATE } from './actionTypes';
 import retrieveAxiosData from '../../helpers/axios/retrieveAxiosData';
 import setSlidesState from './slidesActions';
