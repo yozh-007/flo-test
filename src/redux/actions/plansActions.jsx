@@ -1,4 +1,4 @@
-import { GET_ACTIVE_PLAN_MSG, SET_ACTIVE_PLAN_ID, SET_PLANS_STATE } from './actionTypes';
+import { SET_ACTIVE_PLAN_MSG, SET_ACTIVE_PLAN_ID, SET_PLANS_STATE } from './actionTypes';
 
 export function setActivePlanId(id) {
   return {
@@ -7,9 +7,9 @@ export function setActivePlanId(id) {
   };
 }
 
-export function getActivePlanMsg(msg) {
+export function setActivePlanMsg(msg) {
   return {
-    type: GET_ACTIVE_PLAN_MSG,
+    type: SET_ACTIVE_PLAN_MSG,
     payload: msg,
   };
 }

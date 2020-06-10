@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { planPropTypes, Plan } from './Plan/Plan';
-import { getActivePlanMsg, setActivePlanId } from '../../redux/actions/plansActions';
+import { setActivePlanMsg, setActivePlanId } from '../../redux/actions/plansActions';
 import styles from './Plans.module.scss';
 
 class Plans extends React.Component {
@@ -51,7 +51,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     setId: (id) => dispatch(setActivePlanId(id)),
-    getMsg: (msg) => dispatch(getActivePlanMsg(msg)),
+    getMsg: (msg) => dispatch(setActivePlanMsg(msg)),
   };
 }
 

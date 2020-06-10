@@ -1,4 +1,4 @@
-import { GET_ACTIVE_PLAN_MSG, SET_ACTIVE_PLAN_ID, SET_PLANS_STATE } from '../actions/actionTypes';
+import { SET_ACTIVE_PLAN_MSG, SET_ACTIVE_PLAN_ID, SET_PLANS_STATE } from '../actions/actionTypes';
 import initialPlans from '../initialStates/initialPlans';
 
 export default function plansReducer(state = initialPlans, action) {
@@ -8,7 +8,7 @@ export default function plansReducer(state = initialPlans, action) {
         ...state,
         activePlanId: action.payload,
       };
-    case GET_ACTIVE_PLAN_MSG:
+    case SET_ACTIVE_PLAN_MSG:
       return {
         ...state,
         activePlanMsg: action.payload,
